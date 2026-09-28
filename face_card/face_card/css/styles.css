@@ -1,0 +1,106 @@
+/* aqui criamos todas as variáveis que serão usadas na página
+root deixa a variável GLOBAL - qq um pode usar essa variável */
+:root {
+    --color-grey-700: #333333;
+    --color-grey-800: #1f1f1f;
+    --color-grey-900: #141414;
+    --color-light-100: #f4f4f4;
+    --color-green-300: #c5f82a;
+
+    --size-100: 100px;
+    --size-150: 150px;
+
+    --radius-circle: 50%;
+
+    --font-body: "Urbanist", sans-serif;
+
+}
+
+
+/* * aplica a regra a todos os elementos da página
+USAR EM SEUS PROJETOS INICIAIS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-grey-900);
+    font-family: var(--font-body);
+}
+
+div {
+    width: 400px;
+    background-color: var(--color-grey-800);
+    color: var(--color-light-100);
+    text-align: center;
+    padding: 20px;
+    margin-inline: auto;
+    margin-block: 30px;
+    border-radius: 10px;
+
+}
+
+img {
+    width: var(--size-100);
+    border-radius: var(--radius-circle);
+    border: 3px solid var(--color-light-100);
+
+    transition: .7s;
+
+    &:hover {
+        border-color: var(--color-grey-800);
+        scale: 1.1;
+        filter: grayscale(0);
+    }
+}
+
+h1 {
+    color:var(--color-light-100);
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-inline: auto;
+    line-height: 1.7;
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+    background-color: red;
+    margin-block: 10px;
+    padding-block: 10px;
+    transition: .5s;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: var(--color-light-100);
+
+        a {
+            color: var(--color-grey-900);
+        }
+    }
+
+}
+
+a {
+    color: var(--color-light-100);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+}
+
